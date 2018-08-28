@@ -1,0 +1,16 @@
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) {
+    var d = s.split('');
+    for (let i = 0; i< d.length; i++){
+        if(d[i]== "a" || d[i]== "e" || d[i]== "i" || d[i]== "o" || d[i]== "u" )
+            console.log(d[i]);
+    }
+    
+    for (let i = 0; i< d.length; i++){
+        if(d[i] != "a" && d[i]!= "e" && d[i]!= "i" && d[i] != "o" && d[i]!= "u" )
+            console.log(d[i]);
+    }
+}
