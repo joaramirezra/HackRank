@@ -1,0 +1,13 @@
+function getSecondLargest(nums) {
+    var aux=0;
+    var aux2=0;
+    for (var  i = 0 ; i< nums.length ; i++){
+        if (nums[i]>aux){ 
+            aux2 = aux;
+            aux = nums[i];
+        }
+        else if (nums[i]>aux2 && nums[i]<aux)aux2 = nums[i];
+        }
+   return aux2; 
+    // Complete the function
+}
