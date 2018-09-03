@@ -1,0 +1,9 @@
+function sides(literals, ...expressions) {
+    var a = expressions[0];
+    var p = expressions[1];
+    return [ (p + Math.sqrt(( Math.pow(p,2) - 16 * a)))/4
+           ,  (p - Math.sqrt(( Math.pow(p,2) - 16 * a)))/4
+            ].sort();
+        
+    
+}
